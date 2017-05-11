@@ -1,6 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Want to send a text?</h1>
+<p>Welcome! We'll send any text for you to any number!</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
+    <%= label_tag(:q, "Send This:") %><br/>
+    <%= text_area_tag(:message, "Type the text message here", size: "24x6") %><br/>
+    <%= label_tag(:q, "To:") %>
+    <%= telephone_field(:user, :phone) %><br/>
+    <%= submit_tag("SEND IT!") %>
 <% end %>
