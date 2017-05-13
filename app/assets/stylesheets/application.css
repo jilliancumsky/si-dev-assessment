@@ -14,16 +14,29 @@
  *= require_self
  */
 body{
-    background-color:#F0F8FF;
-    color: #778899;
-    font-family: monospace;
+    background-color:#edf3f8;
+    color: #4682B4;
+    font-family: sans-serif;
 }
 
 h1{
     text-align: center;
     font-weight: bold;
+    font-size: 500%;
+    border-bottom-style: solid;
+    border-bottom-color: #778899;
+    border-bottom-width: thick;
 }
 
 p{
-    font-style: italic;
+    font-size:200%;
+}
+
+#message{
+    color: #4682B4;
+    box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.07);
+}
+#number{
+    color: #4682B4;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.07);
 }

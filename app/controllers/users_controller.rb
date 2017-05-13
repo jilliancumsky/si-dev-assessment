@@ -15,11 +15,15 @@ class UsersController < ApplicationController
       redirect_to action: "new"
     end
   end
+  
+  def edit
+    @user = User.find(params[:id])
+  end
 
 private
 
   def user_params
-    params.require(:user).permit(:id, :name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:body, :to)
   end
 
 end
